@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_home"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.noelia.tabacalera.Home">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="250dp"
+        android:layout_alignParentTop="true"
+        android:weightSum="1"
+        android:id="@+id/linearLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <!--<HorizontalScrollView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:id="@+id/horizontalScrollView"-->
+            <!--android:fadeScrollbars="false"-->
+            <!--android:scrollIndicators="right">-->
+        <!--</HorizontalScrollView>-->
+
+         <!--   <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+-->
+
+               <!-- <ImageView
+                    android:layout_width="355dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/foto1"
+                    android:src="@mipmap/ic_launcher"/>
+
+                <ImageView
+                    android:layout_width="355dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/foto2"
+                    android:src="@mipmap/ic_launcher"/>
+
+                <ImageView
+                    android:layout_width="355dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/foto3"
+                    android:src="@mipmap/ic_launcher"/>
+
+                <ImageView
+                    android:layout_width="355dp"
+                    android:layout_height="match_parent"
+                    android:id="@+id/foto4"
+                    android:src="@mipmap/ic_launcher"/>-->
+
+            <Gallery
+                android:id="@+id/gallery"
+                android:layout_width="367dp"
+                android:layout_height="230dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/image_count"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:layout_above="@+id/LayoutList">
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LayoutList"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/listView" />
+
+    </LinearLayout>
+
+</RelativeLayout>
